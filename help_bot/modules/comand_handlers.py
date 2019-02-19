@@ -8,4 +8,5 @@ class Hello(HandlerInterface):
     handler = CommandHandler
 
     def apply(self, bot, update):
+        # test push
         update.message.reply_text('Hello {}'.format(update.message.from_user.first_name))
